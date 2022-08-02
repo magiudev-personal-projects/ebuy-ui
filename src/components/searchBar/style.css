@@ -1,0 +1,26 @@
+.search-bar__container {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 30px;
+    background-color: rgb(250, 250, 250);
+    z-index: 2;
+}
+
+.search-bar__input-container {
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    gap: 10px;
+    background-color: white;
+}
+
+.search-bar__input {
+    border: none;
+}
+
+.search-bar__input:focus {
+    outline: none;
+}

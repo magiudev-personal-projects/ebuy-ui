@@ -1,0 +1,91 @@
+.login__container {
+    height: 100vh;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        rgba(173, 225, 230, 0),
+        rgba(173, 225, 230, 1)
+    );
+    background-size: cover;
+    background-position: center center;
+}
+
+.login__form {
+    width: 90vw;
+    min-width: 200px;
+    max-width: 700px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+}
+
+.login__input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login__input {
+    padding: 10px;
+}
+
+.login__input:focus {
+    outline: none;
+}
+
+.login__button {
+    background-color: transparent;
+    color: white;
+    height: 30px;
+    border: 1px solid teal;
+    color: teal;
+}
+
+.login__button:hover {
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+}
+
+.login__link {
+    color: black;
+    text-decoration: none;
+}
+
+.login__link:hover {
+    text-decoration: underline;
+    cursor: pointer
+}
+
+.login__text {
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 600px) {
+    .login__container {
+        background: 
+            linear-gradient(
+                rgba(173, 225, 230, 0),
+                rgba(173, 225, 230, .5)
+            ),
+            url("https://images.pexels.com/photos/6984650/pexels-photo-6984650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .login__form {
+        width: 80vw;
+    }
+
+    .login__input-group {
+        flex-direction: row;
+    }
+
+    .login__input {
+        flex-grow: 1;
+    }
+}
